@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:red; font-size: 50px">The cssText Property</h1>
+
+    <p>Click the button to set the value of the inline style of the H1 element.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p><strong>Note:</strong> The value of the inline style is competely overwritten (In this example font-size is no loner 50px).</p>
+
+    <script>
+    function myFunction() {
+        var elmnt = document.getElementsByTagName ("h1")[0];
+        elmnt.style.cssText = "color: blue;";
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:red; font-size:50px;">Loop Through All Style Properties</h1>
+
+    <p>Click the button to display all the style properties of the H1 element:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+    function myFunction() {
+        var elmnt, i, txt = "";
+        elmnt = document.getElementsByTagName("h1")[0];
+        for (i = 0; i < elmnt.style.length; i++) {
+            txt += elmnt.style.item(i) + "<br>";
+        }
+        document.getElementById("demo").innerHTML += txt;
+    }
+    </script>
+
+</body>
+</html>
